@@ -27,3 +27,19 @@ print(f"first_number: {f_n} , second_number : {s_n}, addition_output = {output}"
 # print(f_n+s_n)
 
 # print(7+10)
+
+######################## Explaination of code ####################
+
+f_n = int(input("enter first number"))
+s_n = int(input("enter second number"))
+output = f_n + s_n
+print(f"first number:{f_n},second number:{s_n},addition output:{output}")
+
+
+f_n = int(input("enter first number")) #- This line prompts the user to enter the first number, and then converts the input to an integer using the int() function. The result is stored in the variable f_n.
+
+s_n = int(input("enter second number")) #- This line prompts the user to enter the second number, and then converts the input to an integer. The result is stored in the variable s_n.
+
+output = f_n + s_n #- This line adds the two input numbers together and stores the result in the variable output.
+
+print(f"first number:{f_n},second number:{s_n},addition output:{output}") #- This line uses an f-string to format and print the values of the first number, second number, and the addition output.
