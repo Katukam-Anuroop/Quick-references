@@ -1,17 +1,17 @@
-# list_of_numbers = [2,3,4,5,6,7,3,4,5,6,7,8,3]
-# # print(list_of_numbers[-5:])
-# # list_of_numbers[0:5] = [1,2,3,4,5]
-# print(list_of_numbers[0])
-#
-# list_of_numbers.sort()
-#
-# print("sorted",list_of_numbers)
-# list_of_numbers.sort(reverse = True)
-# print("descending",list_of_numbers)
-#
-# import random
-# random.shuffle(list_of_numbers)
-# print("random", list_of_numbers)
+list_of_numbers = [2,3,4,5,6,7,3,4,5,6,7,8,3]
+# print(list_of_numbers[-5:])
+list_of_numbers[0:5] = [1,2,3,4,5]
+print(list_of_numbers[0])
+
+list_of_numbers.sort()
+
+print("sorted",list_of_numbers)
+list_of_numbers.sort(reverse = True)
+print("descending",list_of_numbers)
+
+import random
+random.shuffle(list_of_numbers)
+print("random", list_of_numbers)
 
 """
 list = [1,2,3,4,5]
@@ -25,24 +25,24 @@ names = ['anuroop','Abhighna','Gnana SAi','Thirumalesh','Trinetra','Mokshagna', 
 # String methods - startswith & endswith
 
 
-# result_con = []
-# for i in names:
-#     if i.startswith('a') or i.startswith('A'):
-#         result_con.append(i)
-# print(result_con)
-#
-# result_low = []
-# for i in names:
-#     if i.lower().startswith('a'):
-#         result_low.append(i)
-# print(result_low)
-#
-# result_low = []
-#
-# for i in names:
-#     if i.lower().startswith('a') or i.lower().startswith('t'):
-#         result_low.append(i)
-# print(result_low)
+result_con = []
+for i in names:
+    if i.startswith('a') or i.startswith('A'):
+        result_con.append(i)
+print(result_con)
+
+result_low = []
+for i in names:
+    if i.lower().startswith('a'):
+        result_low.append(i)
+print(result_low)
+
+result_low = []
+
+for i in names:
+    if i.lower().startswith('a') or i.lower().startswith('t'):
+        result_low.append(i)
+print(result_low)
 result = []
 for i in names:
     for j in i:
@@ -97,14 +97,14 @@ for i, count in count.items():
         print(i)
 
 
-# names.sort()
-# print(names)
-#
-# names.sort(key = str.lower)
-# print("lower", names)
-#
-# names.reverse()
-# print("reverse", names)
+names.sort()
+print(names)
+
+names.sort(key = str.lower)
+print("lower", names)
+
+names.reverse()
+print("reverse", names)
 
 
 # append()
@@ -128,38 +128,38 @@ for i, count in count.items():
 #    list_of_numbers[i] = i+1
 
 ### insert
+
+list_of_numbers.insert(9,"Anuroop")
+
+print(list_of_numbers)
 #
-# list_of_numbers.insert(9,"Anuroop")
+list_1 =[1,2,3]
+list_2 = [4,5,6]
+
+for i in list_2:
+    list_1.append(i)
+
+print("append",list_1)
+a = list_1 + list_2
+
+
+
+print("before extend",a)
+list_1.extend(list_2)
 #
-# print(list_of_numbers)
-#
-# list_1 =[1,2,3]
-# list_2 = [4,5,6]
-#
-# for i in list_2:
-#     list_1.append(i)
-#
-# print("append",list_1)
-# a = list_1 + list_2
+# print(list_1)
 #
 #
-#
-# print("before extend",a)
-# list_1.extend(list_2)
-# #
-# # print(list_1)
-# #
-# #
-# a = list_1 + list_2
-#
-# print("after extended",a)
-# list_1 =[1,1,2,2,6,6]
-# print("list_1",list_1)
-# list_1.remove(6)
-# print("updated",list_1)
-# list_1.pop(1)
-# print("pop", list_1)
-# del list_1[-1]
-# print("del", list_1)
-# list_1.clear()
-# print("clear", list_1)
+a = list_1 + list_2
+
+print("after extended",a)
+list_1 =[1,1,2,2,6,6]
+print("list_1",list_1)
+list_1.remove(6)
+print("updated",list_1)
+list_1.pop(1)
+print("pop", list_1)
+del list_1[-1]
+print("del", list_1)
+list_1.clear()
+print("clear", list_1)
